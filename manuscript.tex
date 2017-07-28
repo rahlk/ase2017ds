@@ -6,14 +6,20 @@
 \usepackage{mdwmath}
 \usepackage{mdwtab}
 \usepackage{eqparbox}
-\usepackage[tight,footnotesize]{subfigure}
-\usepackage[caption=false, font=footnotesize]{subfig}
 \usepackage{stfloats}
-\usepackage{url}
-
+\usepackage[]{hyperref}
+% Shortcuts
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\tion}[1]{\S\ref{sect:#1}}
+\newcommand{\fig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\tab}[1]{Table ~\ref{tab:#1}}
+\newcommand{\eq}[1]{Equation~\ref{eq:#1}}
 
 \begin{document}
-\title{Actionable Analytics in Software Engineering\\[-0.2cm]}
+\title{Learning Effective Changes for  Software Projects\\[-0.8cm]}
 \author{Rahul Krishna\\
 \IEEEauthorblockA{Department of Computer Science\\
 North Carolina State University\\
@@ -36,21 +42,30 @@ The primary motivation of much of software analytics is decision making. How do 
 \end{abstract}
 
 \begin{IEEEkeywords}
-
+Data mining, actionable analytics, bellwethers, defect prediction.
 \end{IEEEkeywords}
 
 
 \section{Introduction}
 
-Over the past decade, advances in AI have enabled a widespread use of data analytics in software engineering. For example, we can now estimate	how long it would take to integrate the new code~\cite{czer11},	where bugs are most likely to occur~\cite{ostrand04,Menzies2007a}, or how much effort it will take to develop a software package~\cite{turhan11,koc11b}, etc.
+Over the past decade, advances in AI have enabled a widespread use of data analytics in software engineering. For example, we can now estimate	how long it would take to integrate the new code~\cite{czer11}, where bugs are most likely to occur~\cite{ostrand04,Menzies2007a}, or how much effort it will take to develop a software package~\cite{turhan11,koc11b}, etc. Despite these successes, there are some operational shortcomings with certain software analytic tools.  Business users lament that most software analytics tools, ``Tell us what \textit{is}. But they don't tell us \textit{what to do}''. A similar concern was raised by several researchers at a recent workshop on ``Actionable Analytics'' at 2015 IEEE conference on Automated Software Engineering~\cite{hihn15}. 
+
+For example, most software analytics tools in the area of detecting software defects are mostly \textit{prediction} algorithms such as support vector machines~\cite{cortes95}, naive bayes classifiers~\cite{lessmann08}, logistic regression~\cite{lessmann08}, decision trees~\cite{dtrees}, etc. These prediction algorithms report what combinations of software project features predict for say the number of defects. But this is different task to \textit{planning}, which answers a more pressing question: what to {\em change} in order to {\em improve} quality. Accordingly, in this research, we seek tools that offer clear guidance on what to do in a specific project.
+
+The tool assessed in this paper is the XTREE \textit{planning} tool~\cite{krishna17a}. XTREE employs a $cluster+contrast$ approach to planning where it (a) \textit{Clusters} different parts of the software project based on a quality measure (e.g. the number of defects); (b) Reports the \textit{contrast sets} between neighboring clusters. Each of these contrast sets represent the difference between these clusters and they can  be interpreted as plans, i.e., 
+\begin{itemize}
+	    \item If your current project falls into cluster $C_1$,
+	    \item Some neighboring cluster $C_2$ has better quality.
+	    \item Then the difference {\em $\Delta=$ $C_2$ - $C_1$} is a {\em plan} for changing a  project such that it \textit{might} have   higher quality.
+\end{itemize}
+
+% In several applications, local data is scarce. 
 
 \section{Conclusion}
 
 \section*{Acknowledgment}
 
 \bibliographystyle{IEEEtran}
-\bibliography{ref}
+\bibliography{references}
 
 \end{document}
-
-
