@@ -17,7 +17,7 @@ clean:
 	rm -rf *.idx
 	rm -rf *.aux
 	rm -rf *.toc
-
+	rm -rf *.gz
 
 $(FILE).pdf: *.tex *.bib
 	pdflatex -shell-escape $(FILE).tex
