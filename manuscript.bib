@@ -12,6 +12,92 @@
 	pages =	 {357 -366},
 }
 
+@book{norvig,
+  title={Artificial Intelligence: A Modern Approach},
+  author={Russell, Stuart and Norvig, Peter},
+  publisher={Prentice-Hall, Egnlewood Cliffs},
+  isbn={0-13-604259-7},
+  year={1995}
+}
+
+@book{ghallab04,
+  title={Automated Planning: theory and practice},
+  author={Ghallab, Malik and Nau, Dana and Traverso, Paolo},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@ARTICLE{Bel,
+    author = "Richard Bellman",
+     title = "A Markovian Decision Process",
+   journal = "Indiana Univ. Math. J.",
+  fjournal = "Indiana University Mathematics Journal",
+    volume = 6,
+      year = 1957,
+     issue = 4,
+     pages = "679--684",
+      issn = "0022-2518",
+     coden = "IUMJAB",
+   mrclass = "",
+}
+
+@article{kaelbling98,
+  title={Planning and acting in partially observable stochastic domains},
+  author={Kaelbling, Leslie Pack and Littman, Michael L and Cassandra, Anthony R},
+  journal={Artificial intelligence},
+  volume={101},
+  number={1},
+  pages={99--134},
+  year={1998},
+  publisher={Elsevier}
+}
+
+@article{guo2009,
+  title={Continuous-time Markov decision processes},
+  author={Guo, Xianping and Hern{\'a}ndez-Lerma, On{\'e}simo},
+  journal={Continuous-Time Markov Decision Processes},
+  pages={9--18},
+  year={2009},
+  publisher={Springer}
+}
+
+@book{altman99,
+  title={Constrained Markov decision processes},
+  author={Altman, Eitan},
+  volume={7},
+  year={1999},
+  publisher={CRC Press}
+}
+
+@article{wooldridge95,
+  title={Intelligent agents: Theory and practice},
+  author={Wooldridge, Michael and Jennings, Nicholas R},
+  journal={The knowledge engineering review},
+  volume={10},
+  number={2},
+  pages={115--152},
+  year={1995},
+  publisher={Cambridge University Press}
+}
+@inproceedings{baier09,
+  title={HTN planning with preferences},
+  author={Baier, Shirin Sohrabi Jorge A and McIlraith, Sheila A},
+  booktitle={21st Int. Joint Conf. on Artificial Intelligence},
+  pages={1790--1797},
+  year={2009}
+}
+
+@article{son06,
+  title={Planning with preferences using logic programming},
+  author={Son, Tran Cao and Pontelli, Enrico},
+  journal={Theory and Practice of Logic Programming},
+  volume={6},
+  number={5},
+  pages={559--607},
+  year={2006},
+  publisher={Cambridge University Press}
+}
+
 @inproceedings{ostrand04,
 	author =	 {Ostrand, Thomas J. and Weyuker, Elaine J. and Bell,
 	Robert M.},
@@ -127,4 +213,252 @@ month={Nov},}
 	title = {{Less is more: Minimizing code reorganization using XTREE}},
 	url = {http://arxiv.org/abs/1609.03614},
 	year = {2017}
+}
+
+@inproceedings{peters15,
+abstract = {Before a community can learn general principles, it must share individual experiences. Data sharing is the fundamental step of cross project defect prediction, i.e. the process of using data from one project to predict for defects in another. Prior work on secure data sharing allowed data owners to share their data on a single-party basis for defect prediction via data minimization and obfuscation. However the studied method did not consider that bigger data required the data owner to share more of their data. In this paper, we extend previous work with LACE2 which reduces the amount of data shared by using multi-party data sharing. Here data owners incrementally add data to a cache passed among them and contribute "interesting" data that are not similar to the current content of the cache. Also, before data owner i passes the cache to data owner j, privacy is preserved by applying obfuscation algorithms to hide project details. The experiments of this paper show that (a) LACE2 is comparatively less expensive than the single-party approach and (b) the multi-party approach of LACE2 yields higher privacy than the prior approach without damaging predictive efficacy (indeed, in some cases, LACE2 leads to better defect predictors).},
+author = {Peters, Fayola and Menzies, Tim and Layman, Lucas},
+booktitle = {Proceedings - International Conference on Software Engineering},
+doi = {10.1109/ICSE.2015.92},
+isbn = {9781479919345},
+issn = {02705257},
+pages = {801--811},
+title = {{LACE2: Better privacy-preserving data sharing for cross project defect prediction}},
+volume = {1},
+year = {2015}
+}
+
+@inproceedings{rahman12,
+ author = {Rahman, Foyzur and Posnett, Daryl and Devanbu, Premkumar},
+ title = {Recalling the "Imprecision" of Cross-project Defect Prediction},
+ booktitle = {Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering},
+ series = {FSE '12},
+ year = {2012},
+ isbn = {978-1-4503-1614-9},
+ location = {Cary, North Carolina},
+ pages = {61:1--61:11},
+ articleno = {61},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2393596.2393669},
+ doi = {10.1145/2393596.2393669},
+ acmid = {2393669},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {empirical software engineering, fault prediction, inspection},
+}
+
+@inproceedings{krishna16,
+	abstract = {Transfer learning: is the process of translating quality predictors learned in one data set to another. Transfer learning has been the subject of much recent research. In practice, that research means changing models all the time as transfer learners continually exchange new models to the current project. This paper offers a very simple bellwether transfer learner. Given N data sets, we find which one produce the best predictions on all the others. This bellwether data set is then used for all subsequent predictions (or, until such time as its predictions start failing-- at which point it is wise to seek another bellwether). Bellwethers are interesting since they are very simple to find (just wrap a for-loop around standard data miners). Also, they simplify the task of making general policies in SE since as long as one bellwether remains useful, stable conclusions for N data sets can be achieved just by reasoning over that bellwether. From this, we conclude (1) this bellwether method is a useful (and very simple) transfer learning method; (2) bellwethers are a baseline method against which future transfer learners should be compared; (3) sometimes, when building increasingly complex automatic methods, researchers should pause and compare their supposedly more sophisticated method against simpler alternatives.},
+	address = {New York, New York, USA},
+	author = {Krishna, Rahul and Menzies, Tim and Fu, Wei},
+	booktitle = {Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering - ASE 2016},
+	doi = {10.1145/2970276.2970339},
+	file = {:home/rkrsn/Documents/Mendeley Desktop/Krishna, Menzies, Fu - 2016 - Too much automation the bellwether effect and its implications for transfer learning.pdf:pdf},
+	isbn = {9781450338455},
+	keywords = {data mining,defect prediction,transfer learning},
+	mendeley-groups = {Bellwether Journal},
+	pages = {122--131},
+	publisher = {ACM Press},
+	title = {{Too much automation? the bellwether effect and its implications for transfer learning}},
+	url = {http://dl.acm.org/citation.cfm?doid=2970276.2970339},
+	year = {2016}
+}
+@article{krishna17b,
+	abstract = {Transfer learning has been the subject of much recent research. In practice, that research means that the models are unstable since they are continually revised whenever new data arrives. This paper offers a very simple "bellwether" transfer learner. Given N datasets, we find which one produces the best predictions on all the others. This bellwether dataset is then used for all subsequent predictions (when its predictions start failing, one may seek another bellwether). Bellwethers are interesting since they are very simple to find (wrap a for-loop around standard data miners). They simplify the task of making general policies in software engineering since as long as one bellwether remains useful, stable conclusions for {\$}N{\$} datasets can be achieved by reasoning over that bellwether. This paper shows that this bellwether approach works for multiple datasets from various domains in SE. From this, we conclude that (1) bellwether method is a useful (and simple) transfer learner; (2) Unlike bellwethers, other complex transfer learners do not generalized to all domains in SE; (3) "bellwethers" are a baseline method against which future transfer learners should be compared; (4) When building increasingly complex automatic methods, researchers should pause and compare more sophisticated method against simpler alternatives.},
+	archivePrefix = {arXiv},
+	arxivId = {1703.06218},
+	author = {Krishna, Rahul and Menzies, Tim},
+	journal ={TSE (under review)},
+	eprint = {1703.06218},
+	file = {:home/rkrsn/Documents/Mendeley Desktop/Krishna, Menzies - 2017 - Simpler Transfer Learning (Using Bellwethers).pdf:pdf},
+	month = {mar},
+	pages = {1--18},
+	title = {{Simpler Transfer Learning (Using "Bellwethers")}},
+	url = {http://arxiv.org/abs/1703.06218},
+	year = {2017}
+}
+
+
+@article{deb14,
+author = {Deb, K and Jain, H},
+doi = {10.1109/TEVC.2013.2281535},
+file = {:Users/timm/svns/doc/13nsga-III.pdf:pdf},
+issn = {1089-778X},
+journal = {Evolutionary Computation, IEEE Transactions on},
+keywords = {genetic algorithms;sorting;EMO algorithms;MOEA/D m},
+month = aug,
+number = {4},
+pages = {577--601},
+title = {{An Evolutionary Many-Objective Optimization Algorithm Using Reference-Point-Based Nondominated Sorting Approach, Part I: Solving Problems With Box Constraints}},
+volume = {18},
+year = {2014}
+}
+
+@article{zhang07:TEC,
+author = {Zhang, Qingfu and Li, Hui},
+doi = {10.1109/TEVC.2007.892759},
+issn = {1089-778X},
+journal = {Evolutionary Computation, IEEE Transactions on},
+keywords = {computational complexity;genetic algorithms;comput},
+month = dec,
+number = {6},
+pages = {712--731},
+title = {{MOEA/D: A Multiobjective Evolutionary Algorithm Based on Decomposition}},
+volume = {11},
+year = {2007}
+}
+
+@article{krall2015gale,
+  title={Gale: Geometric active learning for search-based software engineering},
+  author={Krall, Joseph and Menzies, Tim and Davies, Misty},
+  journal={IEEE Transactions on Software Engineering},
+  volume={41},
+  number={10},
+  pages={1001--1018},
+  year={2015},
+  publisher={IEEE}
+}
+
+@incollection{zit04,
+author = {Zitzler, Eckart and K\"{u}nzli, Simon},
+booktitle = {Parallel Problem Solving from Nature - PPSN VIII},
+doi = {10.1007/978-3-540-30217-9\_84},
+editor = {Yao, Xin and Burke, EdmundK. and Lozano, Jos\'{e}A. and Smith, Jim and Merelo-Guerv\'{o}s, JuanJuli\'{a}n and Bullinaria, JohnA. and Rowe, JonathanE. and Tiňo, Peter and Kab\'{a}n, Ata and Schwefel, Hans-Paul},
+file = {:Users/timm/svns/doc/04zitzlerIBEA.pdf:pdf},
+isbn = {978-3-540-23092-2},
+pages = {832--842},
+publisher = {Springer Berlin Heidelberg},
+series = {Lecture Notes in Computer Science},
+title = {{Indicator-Based Selection in Multiobjective Search}},
+url = {http://dx.doi.org/10.1007/978-3-540-30217-9\_84},
+volume = {3242},
+year = {2004}
+}
+
+@inproceedings{zit02,
+author = {Zitzler, Eckart and Laumanns, Marco and Thiele, Lothar},
+booktitle = {Evolutionary Methods for Design, Optimisation, and Control},
+pages = {95--100},
+publisher = {CIMNE, Barcelona, Spain},
+title = {{SPEA2: Improving the Strength Pareto Evolutionary Algorithm for Multiobjective Optimization}},
+year = {2002}
+}
+
+@article{deb00a,
+author = {Deb, Kalyanmoy and Pratap, Amrit and Agarwal, Sameer and Meyarivan, T},
+journal = {IEEE Transactions on Evolutionary Computation},
+pages = {182--197},
+title = {{A Fast Elitist Multi-Objective Genetic Algorithm: NSGA-II}},
+volume = {6},
+year = {2002}
+}
+
+@article{Cui2005a,
+author = {Cui, X and Potok, Te and Palathingal, P},
+file = {:Users/timm/svns/doc/pso/05clusterPSO.pdf:pdf},
+journal = {\ldots  Intelligence Symposium, 2005. \ldots},
+title = {{Document clustering using particle swarm optimization}},
+url = {http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=1501621},
+year = {2005}
+}
+
+@article{Harman2009,
+  title={Search based software engineering: A comprehensive analysis and review of trends techniques and applications},
+  author={Harman, Mark and Mansouri, S Afshin and Zhang, Yuanyuan},
+  journal={Department of Computer Science, King’s College London, Tech. Rep. TR-09-03},
+  year={2009}
+}
+
+@article{Harman2011,
+abstract = {The aim of Search Based Software Engineering (SBSE) research is to move software engineering problems from human-based search to machine-based search, using a variety of techniques from the metaheuristic search, operations research and evolutionary computation paradigms. The idea is to exploit humans creativity and machines tenacity and reliability, rather than requiring humans to perform the more tedious, error prone and thereby costly aspects of the engineering process. SBSE can also provide insights and decision support. This tutorial will present the reader with a step-by-step guide to the application of SBSE techniques to Software Engineering. It assumes neither previous knowledge nor experience with Search Based Optimisation. The intention is that the tutorial will cover sufficient material to allow the reader to become productive in successfully applying search based optimisation to a chosen Software Engineering problem of interest.},
+author = {Harman, M and McMinn, P and {De Souza}, JT and Yoo, S},
+doi = {10.1007/978-3-642-25231-0\_1},
+journal = {Search},
+pages = {1--59},
+title = {{Search based software engineering: Techniques, taxonomy, tutorial}},
+url = {http://discovery.ucl.ac.uk/1340709/},
+volume = {2012},
+year = {2011}
+}
+
+@article{LeGoues2015,
+author = {{Le Goues}, Claire and Holtschulte, Neal and Smith, Edward K and Brun, Yuriy and Devanbu, Premkumar and Forrest, Stephanie and Weimer, Westley},
+doi = {10.1109/TSE.2015.2454513},
+file = {:home/rkrsn/Documents/Mendeley Desktop/Le Goues et al. - 2015 - The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs.pdf:pdf},
+issn = {0098-5589},
+journal = {IEEE Transactions on Software Engineering},
+keywords = {Automated program repair,INTROCLASS,MANYBUGS,benchmark,reproducibility,subject defect},
+mendeley-groups = {Automated Program Repair},
+month = {dec},
+number = {12},
+pages = {1236--1256},
+title = {{The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs}},
+url = {http://ieeexplore.ieee.org/document/7153570/},
+volume = {41},
+year = {2015}
+}
+
+@inproceedings{Weimer2009,
+abstract = {Automatic program repair has been a longstanding goal in software engineering, yet debugging remains a largely manual process. We introduce a fully automated method for locating and repairing bugs in software. The approach works on off-the-shelf legacy applications and does not require formal specifications, program annotations or special coding practices. Once a program fault is discovered, an extended form of genetic programming is used to evolve program variants until one is found that both retains required functionality and also avoids the defect in question. Standard test cases are used to exercise the fault and to encode program requirements. After a successful repair has been discovered, it is minimized using structural differencing algorithms and delta debugging. We describe the proposed method and report experimental results demonstrating that it can successfully repair ten different C programs totaling 63,000 lines in under 200 seconds, on average.},
+author = {Weimer, Westley and Nguyen, ThanhVu and {Le Goues}, Claire and Forrest, Stephanie},
+booktitle = {Proceedings - International Conference on Software Engineering},
+doi = {10.1109/ICSE.2009.5070536},
+file = {:home/rkrsn/Documents/Mendeley Desktop/Weimer, Goues, Forrest - 2009 - Automatically Finding Patches Using Genetic Programming ∗.pdf:pdf},
+isbn = {9781424434527},
+issn = {02705257},
+keywords = {[Electronic Manuscript]},
+mendeley-groups = {Automated Program Repair},
+pages = {364--374},
+publisher = {IEEE},
+title = {{Automatically finding patches using genetic programming}},
+url = {http://ieeexplore.ieee.org/document/5070536/},
+year = {2009}
+}
+
+
+@inproceedings{sayyad13,
+  title={Scalable product line configuration: A straw to break the camel's back},
+  author={Sayyad, Abdel Salam and Ingram, Joseph and Menzies, Tim and Ammar, Hany},
+  booktitle={Automated Software Engineering (ASE), 2013 IEEE/ACM 28th International Conference on},
+  pages={465--474},
+  year={2013},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{henard15, 
+author={C. Henard and M. Papadakis and M. Harman and Y. Le Traon}, 
+booktitle={2015 IEEE/ACM 37th IEEE International Conference on Software Engineering}, 
+title={Combining Multi-Objective Search and Constraint Solving for Configuring Large Software Product Lines}, 
+year={2015}, 
+volume={1}, 
+pages={517-528}, 
+keywords={configuration management;optimisation;search problems;software metrics;software product lines;SATIBEA framework;SPL feature selection;constraint solving;diversity metrics;multiobjective search-based optimization;software product lines configuration;Filtering algorithms;Frequency modulation;Measurement;Optimization;Search problems;Software;Software product lines}, 
+doi={10.1109/ICSE.2015.69}, 
+ISSN={0270-5257}, 
+month={May},}
+
+@inproceedings{metzger14,
+  title={Software product line engineering and variability management: achievements and challenges},
+  author={Metzger, Andreas and Pohl, Klaus},
+  booktitle={Proceedings of the on Future of Software Engineering},
+  pages={70--84},
+  year={2014},
+  organization={ACM}
+}
+
+@inproceedings{me09m,
+annote = {Available from  http://menzies.us/pdf/09fssga.pdf},
+author = {Andrews, Jamie and Menzies, Tim},
+booktitle = {PROMISE'09},
+title = {{On the Value of Combining Feature Subset Selection with Genetic Algorithms: Faster Learning of Coverage Models}},
+year = {2009}
+}
+
+
+@article{andrews10,
+author = {Andrews, James H and Menzies, Tim and Li, Felix C H},
+journal = {IEEE Transactions on Software Engineering},
+month = mar,
+title = {{Genetic Algorithms for Randomized Unit Testing}},
+year = {2010}
 }
