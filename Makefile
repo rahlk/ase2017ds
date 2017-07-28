@@ -17,7 +17,6 @@ clean:
 	rm -rf *.idx
 	rm -rf *.aux
 	rm -rf *.toc
-	rm -f ${FILE}.pdf
 
 
 $(FILE).pdf: *.tex *.bib
@@ -26,3 +25,8 @@ $(FILE).pdf: *.tex *.bib
 	bibtex $(FILE)
 	pdflatex -shell-escape $(FILE).tex
 	pdflatex -shell-escape $(FILE).tex
+
+git: $(FILE).pdf clean
+	git add --all .
+	git commit -m "Makefile commit"
+	git push
